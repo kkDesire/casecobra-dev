@@ -6,6 +6,15 @@ interface PhoneProps extends HTMLAttributes<HTMLDivElement> {
   dark?: boolean;
 }
 
+/**
+ * Renders a phone component with an overlayed image.
+ *
+ * @param {string} imgSrc - The source URL of the overlayed image.
+ * @param {string} className - Additional CSS class names for the phone component.
+ * @param {boolean} [dark=false] - Indicates whether the phone component should use the dark template.
+ * @param {HTMLAttributes<HTMLDivElement>} props - Additional props for the phone component.
+ * @returns {JSX.Element} The rendered phone component.
+ */
 const Phone = ({ imgSrc, className, dark = false, ...props }: PhoneProps) => {
   return (
     <div
